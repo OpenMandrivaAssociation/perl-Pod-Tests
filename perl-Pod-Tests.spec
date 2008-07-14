@@ -2,8 +2,8 @@
 
 Summary:	Extracts embedded tests and code examples from POD
 Name:		perl-%real_name
-Version:	0.18
-Release:	%mkrel 4
+Version:	1.19
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
