@@ -8,7 +8,7 @@ Release:	4
 Summary:	Extracts embedded tests and code examples from POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
