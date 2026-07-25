@@ -1,15 +1,15 @@
 %define upstream_name Pod-Tests
-%define upstream_version 1.19
+%define upstream_version 1.20
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Extracts embedded tests and code examples from POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/karenetheridge/Pod-Tests
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Pod-Tests-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
