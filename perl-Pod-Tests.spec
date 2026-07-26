@@ -1,15 +1,13 @@
 %define upstream_name Pod-Tests
-%define upstream_version 1.20
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.20
+Release:	2
 
 Summary:	Extracts embedded tests and code examples from POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/karenetheridge/Pod-Tests
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Pod-Tests-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Pod-Tests-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -20,7 +18,7 @@ This is a specialized POD viewer to extract embedded tests and code examples
 from POD. It doesn't do much more than that. pod2test does the useful work.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 chmod 644 Changes README
@@ -44,9 +42,7 @@ make test
 %changelog
 * Mon Aug 03 2009 Jérôme Quelin <jquelin@mandriva.org> 1.190.0-1mdv2010.0
 + Revision: 407969
-- rebuild using %%perl_convert_version
-
-* Mon Jul 14 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.19-1mdv2009.0
+- rebuild using %1.20 Mon Jul 14 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.19-1mdv2009.0
 + Revision: 235607
 - update to new version 1.19
 
